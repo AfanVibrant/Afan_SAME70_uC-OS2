@@ -13,7 +13,13 @@ All Afan RTOS repositories(FreeRTOS/uC/OS-II/uC/OS-III/RT-Thread/ThreadX) all
 shares the same BSP from repository <https://github.com/AfanVibrant/Afan_SAME70_BSP.git>.
 
 You can use free tools to develop, compile and debug this project on Microchip
-ATSAME70Q21(ARM Cortex-M7 Core) MCU.
+ATSAME70Q21(ARM Cortex-M7 Core) MCU. As a MCU developer, I prefer to use 3rd part
+free IDE and tools with my work, to be honest some MCU vendor's IDEs are not easy to use.
+It's more convinient for me to use the same tools/IDE to finish the work with
+different MCU.
+
+There is no plan to provide other IDE, such as IAR or Keil support for there sereies
+projects, I have no license for such tools and there are also too expensive for me.
 
 Tools used for this project are as following (using Windows as example):
   - IDE: Eclipse IDE for Embedded C/C++ Developers with Version: 2021-03 (4.19.0).
@@ -44,7 +50,9 @@ Following these steps (using Windows10 for example):
   - Downloading Windows Build Tool: xpack-windows-build-tools-4.2.1-2-win32-x64.
   - Downloading Windows Debug Tool: xpack-openocd-0.11.0-1-win32-x64.
   - Unzip all needed tools as mentioned before.
-  - From Help directory you can get more details of setting up development environments. 
+  - From Help directory you can get more details of setting up development environments.
+  - Rename downloaded project name from Afan_SAME70_xxx to Afan SAME70 xxx(replace '_' by space).
+  - Import Afan SAME70 BSP to your Eclipse IDE first before import other RTOS project.
 
 ## Project Debugging
 
